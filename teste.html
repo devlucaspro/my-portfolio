@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background-color: #000;
+            font-family: Helvetica;
+            margin-left: 120px;
+        }
+
+        h1{
+            display: inline;
+            padding: 3px 10px;
+            margin-top: 20px;
+            background-color: rgb(31, 65, 255);
+            color: #fff;
+        }
+        p{
+            display: block;
+            width: 150px;
+            color: #fff;
+            text-decoration: none;
+            padding: 3px;
+            cursor:default ;
+        }
+        p:hover{
+            text-decoration: underline;
+            color: #f1f1f1;
+            text-decoration-color: rgb(31, 65, 255);
+            text-decoration-style: wavy;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div style="text-indent: -9999; padding-bottom: 10px;">Welcome</div>
+    <h1 id="hover">TO DO LIST</h1>
+
+    <ul id="ul">
+
+    </ul>
+
+    <script>
+
+    let hover = document.getElementById("hover");
+    
+    hover.addEventListener('mouseover', teste);
+
+    function teste(event){
+       let ul = document.getElementById("ul");
+    
+       let li = document.createElement("li");
+       let p = document.createElement("p");
+       p.innerText = prompt("Digite sua Tarefa:");
+        ul.appendChild(li);
+        li.appendChild(p);
+    }
+
+    </script>
+</body>
+</html>
