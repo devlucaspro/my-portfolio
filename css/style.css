@@ -249,7 +249,8 @@ h1{
 
     .cta-main{
         font-size: 16px;
-        padding: 8px 20px;
+        padding: 12px 20px;
         margin-left: 25px;
+        top: 35px;
     }
 }
