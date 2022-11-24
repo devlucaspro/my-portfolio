@@ -28,3 +28,24 @@ function icon(event){
 
 
 h2.addEventListener('mouseover', icon);
+
+
+let btnTheme = document.getElementById("dark-theme");
+
+function dark(event){
+    let body = document.getElementById("main");
+    let servicos = document.getElementById("servicos");
+    let linksNav = document.getElementById("a");
+    let linksNav2 = document.getElementById("a2");
+    let linksNav3 = document.getElementById("a3");
+    let menu = document.getElementById("menu");
+
+    body.classList.toggle("theme-dark");
+    servicos.classList.toggle("themeDarkServicos");
+    linksNav.classList.toggle("linksDark");
+    linksNav2.classList.toggle("linksDark");
+    linksNav3.classList.toggle("linksDark");
+    menu.classList.toggle("menuDark");
+}
+
+btnTheme.addEventListener('click', dark);

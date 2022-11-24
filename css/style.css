@@ -19,14 +19,34 @@ body, ul{
 }
 
 .mt-6{
-    margin-top: 7.5rem !important;
+    margin-top: 10rem !important;
 }
 
 /* header */
 
+.dark{
+    background-color: #876497;
+}
+
+#dark-theme{
+    background-color: #895FAB;
+    border: none;
+    border-radius: 5px;
+    margin-left: .9rem;
+    padding: 1px 10px;
+}
+
 #header a{
     color: #895FAB;
     text-decoration: none;
+}
+
+.linksDark{
+    color: #ffffff !important;
+    transition: .8s;
+}
+.linksDark:hover{
+    color: #895FAB !important;
 }
 
 #header a:hover{
@@ -76,6 +96,11 @@ h1{
     background: #210b2c;
 }
 
+.theme-dark{
+    background-color: #161616 !important;
+    transition: 1s;
+}
+
 .cta-main{
     color: #fff;
     text-decoration: none;
@@ -102,6 +127,11 @@ h1{
     background-color: #1d0827;
     padding: 14px 35px 14px 35px;
     border-radius: 7px;
+}
+
+.themeDarkServicos{
+    background-color: #111111 !important;
+    transition: 1s;
 }
 
 #servicos a{
@@ -148,6 +178,17 @@ h1{
         z-index: 1000;
         visibility: hidden;
         overflow-y: hidden;
+    }
+
+    #dark-theme{
+        margin: 15px 0px 15px 3px;
+        padding: 3px 10px;
+        width: 90%;
+    }
+
+    .menuDark{
+        background-color: #161616 !important;
+        transition: 1s;
     }
     #nav.active #menu{
         height: calc(100vh - 70px);
